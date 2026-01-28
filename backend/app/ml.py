@@ -1,7 +1,13 @@
+import os
 import joblib
 import numpy as np
 
-model = joblib.load("ml/reliability_model.pkl")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+MODEL_PATH = os.path.join(BASE_DIR, "..", "ml", "reliability_model.pkl")
+
+model = joblib.load(MODEL_PATH)
 
 def predict_reliability():
     X = np.array([[0, 0, 2]])
