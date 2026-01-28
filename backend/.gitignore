@@ -1,0 +1,4 @@
+.env
+ml/data/cargo2000.csv
+*.csv
+reliability_model.pkl
