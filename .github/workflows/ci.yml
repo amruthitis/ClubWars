@@ -1,9 +1,9 @@
-name: FastAPI + React CI (Test)
+name: FastAPI + React CI
 
 on:
   push:
     branches:
-      - ci-test
+      - main
   pull_request:
     branches:
       - main
@@ -51,4 +51,3 @@ jobs:
 
       - name: Build React app
         run: npm run build
-it push origin ci-test
